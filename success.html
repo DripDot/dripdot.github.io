@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Approved | Semantic Games</title>
+    <title>Payment Successful | DripDot Games</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; text-align: center; padding: 50px; color: #333; }
-        .container { max-width: 500px; margin: auto; border: 1px solid #eee; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { color: #28a745; }
-        p { font-size: 1.1em; line-height: 1.6; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #0070ba; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
-        .note { font-size: 0.8em; color: #888; margin-top: 15px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
+        .icon { font-size: 50px; color: #2ecc71; margin-bottom: 20px; }
+        h1 { color: #2c3e50; margin: 0 0 10px; }
+        p { color: #7f8c8d; line-height: 1.6; }
+        .instruction { font-weight: bold; color: #3498db; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Payment Approved</h1>
-        <p>Thank you! Your transaction was successful.</p>
-        <p><strong>Please click below to return to the application.</strong></p>
-        
-        <button onclick="window.close();" class="btn">Close This Tab</button>
-        
-        <p class="note">(If the button doesn't work, you can safely close this tab manually.)</p>
+    <div class="card">
+        <div class="icon">✔</div>
+        <h1>Payment Success!</h1>
+        <p>Your transaction has been processed successfully. Your pears are being added to your account.</p>
+        <p class="instruction">You can now safely close this tab.
     </div>
 </body>
 </html>
