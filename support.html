@@ -85,11 +85,10 @@
         <div class="header">
             <div class="icon">✉</div>
             <h1>Support Ticket</h1>
-            <p>Your message will be sent to DripDot Games with your account details.</p>
+            <p>Your message will be sent to DripDot Games.</p>
         </div>
 
-        <!-- REPLACE 'your_formspree_id' WITH YOUR ACTUAL KEY -->
-        <form action="https://formspree.io/f/your_formspree_id" method="POST">
+        <form action="https://formspree.io/f/mzdopwqk" method="POST">
             
             <label for="playerIdField">Player ID</label>
             <input type="text" id="playerIdField" name="playerId" required readonly value="No ID Detected">
@@ -117,9 +116,8 @@
             if (playerId && playerId !== "null" && playerId !== "") {
                 idInput.value = playerId;
             } else {
-                // If no ID is found, we keep it locked but show a warning
                 idInput.value = "ERROR: ID NOT FOUND";
-                idInput.style.color = "#e74c3c"; // Red text for error
+                idInput.style.color = "#e74c3c";
             }
         };
     </script>
