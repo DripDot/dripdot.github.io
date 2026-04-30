@@ -9,15 +9,19 @@
         .container { max-width: 500px; margin: auto; border: 1px solid #eee; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
         h1 { color: #28a745; }
         p { font-size: 1.1em; line-height: 1.6; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #0070ba; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .note { font-size: 0.8em; color: #888; margin-top: 15px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Payment Approved</h1>
         <p>Thank you! Your transaction was successful.</p>
-        <p><strong>Please close this tab and return to the application.</strong></p>
-        <a href="index.html" class="btn">Return Home</a>
+        <p><strong>Please click below to return to the application.</strong></p>
+        
+        <button onclick="window.close();" class="btn">Close This Tab</button>
+        
+        <p class="note">(If the button doesn't work, you can safely close this tab manually.)</p>
     </div>
 </body>
 </html>
